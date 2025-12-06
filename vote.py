@@ -98,9 +98,13 @@ elif option == "Les Miss":
 # -----------------------
 elif option == "Mes Favorites":
     st.header("Mes régions favorites")
-    if st.session_state.favorites:
-        for region in st.session_state.favorites:
-            st.write(f"❤️ {region}")
+
+    total = len(st.session_state.favorites)
+    st.subheader(f"Total : {total} favorite(s) 💖")
+
+    if total > 0:
+        for i, region in enumerate(st.session_state.favorites, start=1):
+            st.write(f"{i}. ❤️ {region}")
     else:
         st.info("Vous n'avez pas encore ajouté de favorites.")
       
@@ -112,6 +116,7 @@ elif option == "Mes Favorites":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
