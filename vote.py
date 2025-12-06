@@ -68,7 +68,7 @@ if option == "Accueil":
 # -----------------------
 # Option 1 : Les miss
 # -----------------------
-elif option == "Les miss":
+elif option == "Les Miss":
     st.header("Liste des candidates Miss France 2026")
     
     df_miss_sorted = df_miss.sort_values(by="Région").reset_index(drop=True)
@@ -94,7 +94,7 @@ elif option == "Les miss":
                 st.session_state.favorites.append(row['Région'])
 
 # -----------------------
-# Option 2 : Mes favorites
+# Option 2 : Mes Favorites
 # -----------------------
 elif option == "Mes favorites":
     st.header("Mes régions favorites")
@@ -103,7 +103,7 @@ elif option == "Mes favorites":
             st.write(f"❤️ {region}")
     else:
         st.info("Vous n'avez pas encore ajouté de favorites.")
-
+      
 
 
 
@@ -112,6 +112,7 @@ elif option == "Mes favorites":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
