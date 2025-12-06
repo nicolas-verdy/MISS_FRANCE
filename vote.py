@@ -20,13 +20,13 @@ miss_data = [
   {"Région":"Ile-de-France","Nom_Prénom":"Mareva Michel","Âge":21,"Taille":1.78,"Profession_ou_Études":"Étudiante école de commerce (ESSEC)","photo":"IleFrance.jpg"},
   {"Région":"Languedoc","Nom_Prénom":"Lou Lambert","Âge":19,"Taille":1.72,"Profession_ou_Études":"Étudiante en droit","photo":"Languedoc.jpg"},
   {"Région":"Limousin","Nom_Prénom":"Aloïce Sejotte","Âge":24,"Taille":1.74,"Profession_ou_Études":"Maroquinerie de luxe / ex-BTS mode","photo":"Limousin.jpg"},
-  {"Région":"Lorraine","Nom_Prénom":"Camille L’Étang","Âge":23,"Taille":1.72,"Profession_ou_Études":"Infirmière en cancérologie","photo":"mettre url miss + Lorraine"},
-  {"Région":"Martinique","Nom_Prénom":"Léaline Patry","Âge":21,"Taille":1.71,"Profession_ou_Études":"Étudiante stylisme-modélisme","photo":"mettre url miss + Martinique"},
-  {"Région":"Mayotte","Nom_Prénom":"Kamillat Hervian","Âge":24,"Taille":1.73,"Profession_ou_Études":"—","photo":"mettre url miss + Mayotte"},
-  {"Région":"Midi-Pyrénées","Nom_Prénom":"Léa Chabrel","Âge":24,"Taille":1.7,"Profession_ou_Études":"Ostéopathe / ancienne sportive","photo":"mettre url miss + Midi-Pyrénées"},
-  {"Région":"Nord-Pas-de-Calais","Nom_Prénom":"Lola Lacheré","Âge":20,"Taille":1.74,"Profession_ou_Études":"Étudiante marketing / ex-volleyball","photo":"mettre url miss + Nord-Pas-de-Calais"},
-  {"Région":"Normandie","Nom_Prénom":"Victoire Dupuis","Âge":19,"Taille":1.7,"Profession_ou_Études":"Étudiante en communication","photo":"mettre url miss + Normandie"},
-  {"Région":"Nouvelle-Calédonie","Nom_Prénom":"Juliette Collet","Âge":23,"Taille":1.7,"Profession_ou_Études":"Étudiante (sciences)","photo":"mettre url miss + Nouvelle-Calédonie"},
+  {"Région":"Lorraine","Nom_Prénom":"Camille L’Étang","Âge":23,"Taille":1.72,"Profession_ou_Études":"Infirmière en cancérologie","photo":"Lorraine.jpg"},
+  {"Région":"Martinique","Nom_Prénom":"Léaline Patry","Âge":21,"Taille":1.71,"Profession_ou_Études":"Étudiante stylisme-modélisme","photo":"Martinique.jpg"},
+  {"Région":"Mayotte","Nom_Prénom":"Kamillat Hervian","Âge":24,"Taille":1.73,"Profession_ou_Études":"—","photo":"Mayotte.jpg"},
+  {"Région":"Midi-Pyrénées","Nom_Prénom":"Léa Chabrel","Âge":24,"Taille":1.7,"Profession_ou_Études":"Ostéopathe / ancienne sportive","photo":"MidiPyrennes.jpg"},
+  {"Région":"Nord-Pas-de-Calais","Nom_Prénom":"Lola Lacheré","Âge":20,"Taille":1.74,"Profession_ou_Études":"Étudiante marketing / ex-volleyball","photo":"NordPasCalais.jpg"},
+  {"Région":"Normandie","Nom_Prénom":"Victoire Dupuis","Âge":19,"Taille":1.7,"Profession_ou_Études":"Étudiante en communication","photo":"Normandie.jpg"},
+  {"Région":"Nouvelle-Calédonie","Nom_Prénom":"Juliette Collet","Âge":23,"Taille":1.7,"Profession_ou_Études":"Étudiante (sciences)","photo":"NouvelleCaledonie.jpg"},
   {"Région":"Pays de la Loire","Nom_Prénom":"Lola Winter","Âge":19,"Taille":1.71,"Profession_ou_Études":"Étudiante en droit","photo":"mettre url miss + Pays de la Loire"},
   {"Région":"Picardie","Nom_Prénom":"Emma Boivin","Âge":24,"Taille":1.77,"Profession_ou_Études":"Étudiante infirmière / danseuse","photo":"mettre url miss + Picardie"},
   {"Région":"Poitou-Charentes","Nom_Prénom":"Agathe Michelet","Âge":26,"Taille":1.74,"Profession_ou_Études":"Chirurgien-dentiste","photo":"mettre url miss + Poitou-Charentes"},
@@ -135,6 +135,7 @@ elif option == "Mon vote":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
