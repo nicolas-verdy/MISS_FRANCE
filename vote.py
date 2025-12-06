@@ -1,16 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-# Replier automatiquement la sidebar
-st.markdown("""
-    <script>
-        const sidebar = window.parent.document.querySelector('[data-testid="stSidebar"]');
-        if (sidebar) {
-            sidebar.style.transform = "translateX(-100%)";
-        }
-    </script>
-""", unsafe_allow_html=True)
-
 # -----------------------
 # Données Miss intégrées en JSON
 # -----------------------
@@ -126,6 +116,7 @@ elif option == "Mes Favorites":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
