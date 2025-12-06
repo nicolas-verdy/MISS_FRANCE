@@ -18,6 +18,7 @@ miss_data = [
   {"Région":"Guadeloupe","Nom_Prénom":"Naomi Torrent","Âge":30,"Taille":1.77,"Profession_ou_Études":"Double master en management & ingénierie financière","photo":"Guadeloupe.jpg"},
   {"Région":"Guyane","Nom_Prénom":"Alicia Mertosetiko","Âge":20,"Taille":1.73,"Profession_ou_Études":"Étudiante BTS professions immobilières & handballeuse","photo":"Guyane.jpg"},
   {"Région":"Île-de-France","Nom_Prénom":"Mareva Michel","Âge":21,"Taille":1.78,"Profession_ou_Études":"Étudiante école de commerce (ESSEC)","photo":"IleFrance.jpg"},
+  {"Région":"Île-de-France","Nom_Prénom":"Mareva Michel","Âge":21,"Taille":1.78,"Profession_ou_Études":"Étudiante école de commerce (ESSEC)","photo":"IleFrance.jpg"},
   {"Région":"Languedoc","Nom_Prénom":"Lou Lambert","Âge":19,"Taille":1.72,"Profession_ou_Études":"Étudiante en droit","photo":"Languedoc.jpg"},
   {"Région":"Limousin","Nom_Prénom":"Aloïce Sejotte","Âge":24,"Taille":1.74,"Profession_ou_Études":"Maroquinerie de luxe / ex-BTS mode","photo":"Limousin.jpg"},
   {"Région":"Lorraine","Nom_Prénom":"Camille L’Étang","Âge":23,"Taille":1.72,"Profession_ou_Études":"Infirmière en cancérologie","photo":"mettre url miss + Lorraine"},
@@ -135,4 +136,5 @@ elif option == "Mon vote":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
