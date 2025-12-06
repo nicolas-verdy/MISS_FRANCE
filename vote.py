@@ -51,7 +51,7 @@ if "vote_12" not in st.session_state or not isinstance(st.session_state.vote_12,
 # -----------------------
 # Sidebar / navigation
 # -----------------------
-option = st.sidebar.radio(["Accueil", "Les miss", "Mes favorites", "Mon vote"])
+option = st.sidebar.radio("Choix :",["Accueil", "Les miss", "Mes favorites", "Mon vote"])
 
 # -----------------------
 # Page Accueil
@@ -131,6 +131,7 @@ elif option == "Mon vote":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
