@@ -51,7 +51,7 @@ if "vote_12" not in st.session_state or not isinstance(st.session_state.vote_12,
 # -----------------------
 # Sidebar / navigation
 # -----------------------
-option = st.sidebar.radio("Choix :",["Accueil", "Les miss", "Mes favorites", "Mon vote"])
+option = st.sidebar.radio("Choix :",["Accueil", "Les miss", "Mes favorites"])
 
 # -----------------------
 # Page Accueil
@@ -104,26 +104,7 @@ elif option == "Mes favorites":
     else:
         st.info("Vous n'avez pas encore ajouté de favorites.")
 
-# -----------------------
-# Option 3 : Mon vote simplifié
-# -----------------------
-elif option == "Mon vote":
-    st.header("Mon vote par région (sélection libre)")
 
-    cols = st.columns(6)
-    for idx, region in enumerate(df_miss['Région'].unique()):
-        label = f"✅ {region}" if region in st.session_state.vote_12 else region
-        if cols[idx % 6].button(label, key=f"vote_{idx}"):
-            if region in st.session_state.vote_12:
-                st.session_state.vote_12.remove(region)
-            else:
-                st.session_state.vote_12.append(region)
-    
-    st.write(f"Nombre de régions sélectionnées : {len(st.session_state.vote_12)}")
-    
-    if st.button("Réinitialiser mon vote"):
-        st.session_state.vote_12 = []
-        st.success("Vote réinitialisé !")
 
 
 
@@ -131,6 +112,7 @@ elif option == "Mon vote":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
