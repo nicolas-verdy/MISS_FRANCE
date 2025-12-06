@@ -27,14 +27,14 @@ miss_data = [
   {"Région":"Nord-Pas-de-Calais","Nom_Prénom":"Lola Lacheré","Âge":20,"Taille":1.74,"Profession_ou_Études":"Étudiante marketing / ex-volleyball","photo":"NordPasCalais.jpg"},
   {"Région":"Normandie","Nom_Prénom":"Victoire Dupuis","Âge":19,"Taille":1.7,"Profession_ou_Études":"Étudiante en communication","photo":"Normandie.jpg"},
   {"Région":"Nouvelle-Calédonie","Nom_Prénom":"Juliette Collet","Âge":23,"Taille":1.7,"Profession_ou_Études":"Étudiante (sciences)","photo":"NouvelleCaledonie.jpg"},
-  {"Région":"Pays de la Loire","Nom_Prénom":"Lola Winter","Âge":19,"Taille":1.71,"Profession_ou_Études":"Étudiante en droit","photo":"mettre url miss + Pays de la Loire"},
-  {"Région":"Picardie","Nom_Prénom":"Emma Boivin","Âge":24,"Taille":1.77,"Profession_ou_Études":"Étudiante infirmière / danseuse","photo":"mettre url miss + Picardie"},
-  {"Région":"Poitou-Charentes","Nom_Prénom":"Agathe Michelet","Âge":26,"Taille":1.74,"Profession_ou_Études":"Chirurgien-dentiste","photo":"mettre url miss + Poitou-Charentes"},
-  {"Région":"Provence","Nom_Prénom":"Julie Zitouni","Âge":26,"Taille":1.72,"Profession_ou_Études":"Entrepreneuse / mannequin","photo":"mettre url miss + Provence"},
-  {"Région":"Réunion","Nom_Prénom":"Priya Padavatan","Âge":19,"Taille":1.7,"Profession_ou_Études":"Étudiante en droit","photo":"mettre url miss + Réunion"},
-  {"Région":"Rhône-Alpes","Nom_Prénom":"Noémie Baiamonte","Âge":21,"Taille":1.71,"Profession_ou_Études":"Étudiante cinéma / maquilleuse envisagée","photo":"mettre url miss + Rhône-Alpes"},
-  {"Région":"Roussillon","Nom_Prénom":"Déborah Adelin-Chabal","Âge":18,"Taille":1.75,"Profession_ou_Études":"Étudiante en langues / danseuse pro","photo":"mettre url miss + Roussillon"},
-  {"Région":"Tahiti","Nom_Prénom":"Hinaupoko Deveze","Âge":23,"Taille":1.82,"Profession_ou_Études":"Secrétaire administrative / organisatrice de séjours / mannequin","photo":"mettre url miss + Tahiti"}
+  {"Région":"Pays de la Loire","Nom_Prénom":"Lola Winter","Âge":19,"Taille":1.71,"Profession_ou_Études":"Étudiante en droit","photo":"PaysLoire.jpg"},
+  {"Région":"Picardie","Nom_Prénom":"Emma Boivin","Âge":24,"Taille":1.77,"Profession_ou_Études":"Étudiante infirmière / danseuse","photo":"Picardie.jpg"},
+  {"Région":"Poitou-Charentes","Nom_Prénom":"Agathe Michelet","Âge":26,"Taille":1.74,"Profession_ou_Études":"Chirurgien-dentiste","photo":"PoitouCharente.jpg"},
+  {"Région":"Provence","Nom_Prénom":"Julie Zitouni","Âge":26,"Taille":1.72,"Profession_ou_Études":"Entrepreneuse / mannequin","photo":"Provence.jpg"},
+  {"Région":"Réunion","Nom_Prénom":"Priya Padavatan","Âge":19,"Taille":1.7,"Profession_ou_Études":"Étudiante en droit","photo":"Reunion.jpg"},
+  {"Région":"Rhône-Alpes","Nom_Prénom":"Noémie Baiamonte","Âge":21,"Taille":1.71,"Profession_ou_Études":"Étudiante cinéma / maquilleuse envisagée","photo":"RhoneAlpes.jpg"},
+  {"Région":"Roussillon","Nom_Prénom":"Déborah Adelin-Chabal","Âge":18,"Taille":1.75,"Profession_ou_Études":"Étudiante en langues / danseuse pro","photo":"Roussillon.jpg"},
+  {"Région":"Tahiti","Nom_Prénom":"Hinaupoko Deveze","Âge":23,"Taille":1.82,"Profession_ou_Études":"Secrétaire administrative / organisatrice de séjours / mannequin","photo":"Tahiti.jpg"}
 ]
 
 df_miss = pd.DataFrame(miss_data)
@@ -51,7 +51,7 @@ if "vote_12" not in st.session_state or not isinstance(st.session_state.vote_12,
 # -----------------------
 # Sidebar / navigation
 # -----------------------
-option = st.sidebar.selectbox("Navigation", ["Accueil", "Les miss", "Mes favorites", "Mon vote"])
+option = st.sidebar.radio(["Accueil", "Les miss", "Mes favorites", "Mon vote"])
 
 # -----------------------
 # Page Accueil
@@ -61,14 +61,10 @@ if option == "Accueil":
     st.image("photogroupe.png", use_container_width=True)
     st.markdown("""
     Bonjour à tous et bienvenue à notre soirée spéciale **Miss France 2026** !  
-    Merci à **Mag et Cédric** pour leur accueil chaleureux.  
+   
     Bonne chance à tous les votants ! Amusez-vous bien !
     """)
-    st.balloons()
-    if st.button("Commander à boire 🍹"):
-        st.snow()
-        st.success("Votre commande imaginaire est en route ! Profitez bien 😉")
-
+   
 # -----------------------
 # Option 1 : Les miss
 # -----------------------
@@ -135,6 +131,7 @@ elif option == "Mon vote":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
