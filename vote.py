@@ -96,7 +96,7 @@ elif option == "Les Miss":
 # -----------------------
 # Option 2 : Mes Favorites
 # -----------------------
-elif option == "Mes favorites":
+elif option == "Mes Favorites":
     st.header("Mes régions favorites")
     if st.session_state.favorites:
         for region in st.session_state.favorites:
@@ -112,6 +112,7 @@ elif option == "Mes favorites":
 # -----------------------
 # Fin
 # -----------------------     streamlit run vote.py
+
 
 
 
